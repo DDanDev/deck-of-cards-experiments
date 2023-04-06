@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				box-sizing: border-box;
+                font-variant: small-caps;
+			}
+			body {
+				padding: 0.4rem;
+				background: #308834;
+                text-align: center;
+			}
+			header {
+				background: #225f24;
+				color: white;
+                padding: 0.4rem;
+                margin-bottom: 1rem;
+			}
+			img {
+				max-width: 100%;
+				max-height: 30vh;
+			}
+			label,
+			input {
+				width: 2.9rem;
+				max-width: 100%;
+				margin-bottom: 0.4rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<label>Number of cards to draw: <input type="number" min="1" max="52" name="drawCount" id="drawCount" /></label> <input type="button" id="repeatBtn" value="Draw" />
+			<p id="remainingDisplay">52 cards in deck</p>
+		</header>
+		<div id="cardDisplay">
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
